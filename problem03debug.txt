@@ -1,0 +1,77 @@
+Breakpoint 1, input () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:18
+18          printf("Enter the number \n");
+(gdb) n
+Enter the number
+
+Breakpoint 2, input () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:19
+19          scanf("%d",&x);
+(gdb) n
+12
+20          return x;
+(gdb) n
+21      }
+(gdb) n
+main () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:10
+10          b=input();
+(gdb) n
+
+Breakpoint 1, input () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:18
+18          printf("Enter the number \n");
+(gdb) n
+Enter the number
+
+Breakpoint 2, input () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:19
+19          scanf("%d",&x);
+(gdb) n
+1
+20          return x;
+(gdb) n
+21      }
+(gdb) n
+main () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:11
+11          sum=add(a,b);
+(gdb) n
+
+Breakpoint 3, add (a=12, b=1) at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:24
+24          int sum=0;
+(gdb) n
+
+Breakpoint 4, add (a=12, b=1) at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:25
+25          sum=a+b;
+(gdb) n
+26          return sum;
+(gdb) p sum
+$1 = 13
+(gdb) p a
+$2 = 12
+(gdb) p b
+$3 = 1
+(gdb) n
+27      }
+(gdb) n
+main () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:12
+12          output(a,b,sum);
+(gdb) n
+
+Breakpoint 5, output (a=12, b=1, sum=13) at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:30
+30          printf("The sum of %d and %d is %d\n", a,b,sum);
+(gdb) n
+The sum of 12 and 1 is 13
+31      }(gdb) n
+main () at C:\1st year\SEM 2\PSC\c-activity-sets\set01\problem03.c:13
+13          return 0;
+(gdb) n
+14      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 19952] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
