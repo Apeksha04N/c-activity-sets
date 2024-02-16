@@ -1,0 +1,2 @@
+hellw is equal to hello(output)
+there is some logical error in my code.

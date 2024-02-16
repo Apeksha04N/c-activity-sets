@@ -1,0 +1,1 @@
+PS C:\Users\Apeksha N\SEM 2\c-activity-sets\set01> gcc -g -O0 problem01.c -o problem01.exe

@@ -1,0 +1,26 @@
+Breakpoint 1, main () at C:\Users\Apeksha N\SEM 2\c-activity-sets\set01\problem02.c:5
+warning: Source file is more recent than executable.
+5           int a=1;
+(gdb) n
+
+Breakpoint 2, main () at C:\Users\Apeksha N\SEM 2\c-activity-sets\set01\problem02.c:6
+6           int b=2;
+(gdb) print a
+$1 = 1
+(gdb) p a
+$2 = 1
+(gdb) p b
+$3 = 0
+(gdb) n
+
+Breakpoint 3, main () at C:\Users\Apeksha N\SEM 2\c-activity-sets\set01\problem02.c:7
+7           int sum=a+b;
+(gdb) p b
+$4 = 2
+(gdb) n
+8           printf("%d \n",sum);
+(gdb) p sum
+$5 = 3
+(gdb) n
+9           return 0;
+(gdb) quit
