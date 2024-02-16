@@ -1,0 +1,73 @@
+PS C:\1st year\SEM 2\PSC\c-activity-sets\set02>  & 'c:\Users\Apeksha N\.vscode\extensions\ms-vscode.cpptools-1.18.5-win32-x64\debugAdapters\bin\WindowsDebugLauncher.exe' '--stdin=Microsoft-MIEngine-In-y43sbgui.twz' '--stdout=Microsoft-MIEngine-Out-54ive4xx.xk1' '--stderr=Microsoft-MIEngine-Error-e4z4l2t2.rsp' '--pid=Microsoft-MIEngine-Pid-mzkkhsiq.b5p' '--dbgExe=C:\MinGW\bin\gdb.exe' '--interpreter=mi' 
+PS C:\1st year\SEM 2\PSC\c-activity-sets\set02> gdb problem02.exe                                           
+GNU gdb (GDB) 7.6.1                                                                                         
+Copyright (C) 2013 Free Software Foundation, Inc.                                                           
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\1st year\SEM 2\PSC\c-activity-sets\set02\problem02.exe...done.
+(gdb) r
+Starting program: C:\1st year\SEM 2\PSC\c-activity-sets\set02/problem02.exe 
+[New Thread 18004.0x582c]
+[New Thread 18004.0x56c8]
+enter the side of a triangle
+1
+enter the side of a triangle
+2
+enter the side of a triangle
+3
+The triangle with sides 1.000000, 2.000000 and 3.000000 is scalene
+[Inferior 1 (process 18004) exited normally]
+(gdb) r
+Starting program: C:\1st year\SEM 2\PSC\c-activity-sets\set02/problem02.exe 
+[New Thread 24416.0x79c]
+[New Thread 24416.0xdd4]
+enter the side of a triangle
+1
+enter the side of a triangle
+2
+enter the side of a triangle
+1
+The triangle with sides 1.000000, 2.000000 and 1.000000 is not scalene
+[Inferior 1 (process 24416) exited normally]
+(gdb) r
+Starting program: C:\1st year\SEM 2\PSC\c-activity-sets\set02/problem02.exe 
+[New Thread 22376.0x4c98]
+[New Thread 22376.0x4794]
+enter the side of a triangle
+1.1
+enter the side of a triangle
+2.2
+enter the side of a triangle
+2.3
+The triangle with sides 1.100000, 2.200000 and 2.300000 is scalene
+[Inferior 1 (process 22376) exited normally]
+(gdb) r
+Starting program: C:\1st year\SEM 2\PSC\c-activity-sets\set02/problem02.exe 
+[New Thread 19672.0x116c]
+[New Thread 19672.0x4f38]
+enter the side of a triangle
+1.1
+enter the side of a triangle
+2.4
+enter the side of a triangle
+1.1
+The triangle with sides 1.100000, 2.400000 and 1.100000 is not scalene
+[Inferior 1 (process 19672) exited normally]
+(gdb) r
+Starting program: C:\1st year\SEM 2\PSC\c-activity-sets\set02/problem02.exe 
+[New Thread 18212.0x2560]
+[New Thread 18212.0x5610]
+enter the side of a triangle
+1.11111111
+enter the side of a triangle
+1.1111111111
+enter the side of a triangle
+2.2
+The triangle with sides 1.111111, 1.111111 and 2.200000 is not scalene
+[Inferior 1 (process 18212) exited normally]
+(gdb) q
