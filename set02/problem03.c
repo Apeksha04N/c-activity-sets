@@ -1,4 +1,4 @@
-//03.  Write a program find whether a number is a composite number
+// 03.  Write a program find whether a number is a composite number
 #include <stdio.h>
 #include <math.h>
 int input_number();
@@ -6,16 +6,16 @@ int is_composite(int n);
 void output(int n, int result);
 int main()
 {
-    int n=input_number();
-    int result=is_composite(n);
-    output(n,result);
+    int n = input_number();
+    int result = is_composite(n);
+    output(n, result);
     return 0;
 }
 int input_number()
 {
     int n;
     printf("Enter the number\n");
-    scanf("%d",&n);
+    scanf("%d", &n);
     return n;
 }
 
@@ -30,10 +30,10 @@ int input_number()
     Can there be a number greater than n/2 which can divide n?
     no
     can there number greater than sqrt(n) which divide n and quotient which is less than sqrt(n)?
-        
+
      if (n==1)
         return 0;
-        
+
     for(int b=2;b<=sqrt(n);b++) {
         if ( n%b == 0 )
         {
@@ -42,21 +42,21 @@ int input_number()
     }
     return 1;
     }
-    A number which more than 2 factors. 
+    A number which more than 2 factors.
 
 */
 
 int is_composite(int n)
 {
-    int count=0;
-    for(int i=2;i<n;i++) 
+    int count = 0;
+    for (int i = 2; i < n; i++)
     {
-        if(n%i == 0)
+        if (n % i == 0)
         {
             count++;
         }
     }
-    if(n==1)
+    if (n == 1)
     {
         return 0;
     }
@@ -64,14 +64,16 @@ int is_composite(int n)
 }
 void output(int n, int result)
 {
-    if(result>=2)
+    if (result >= 2)
     {
-        printf("The given number %d is composite\n",n,result);
+        printf("The given number %d is composite\n", n, result);
     }
-    else if(result==0){
+    else if (result == 0)
+    {
         printf("1 is neither a prime nor a composite\n");
     }
-    else{
-        printf("The given number %d is not composite\n",n,result);
+    else
+    {
+        printf("The given number %d is not composite\n", n, result);
     }
 }

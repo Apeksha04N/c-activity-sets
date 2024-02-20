@@ -1,4 +1,4 @@
-//04.  Write a program to find Sum of composite number in an array of different numbers entered by the user.
+// 04.  Write a program to find Sum of composite number in an array of different numbers entered by the user.
 #include <stdio.h>
 int input_array_size();
 void input_array(int n, int a[n]);
@@ -7,10 +7,10 @@ void output(int sum);
 int main()
 {
     int n;
-    n=input_array_size();
+    n = input_array_size();
     int a[n];
-    input_array(n,a);
-    int sum=sum_composite_numbers(n,a);
+    input_array(n, a);
+    int sum = sum_composite_numbers(n, a);
     output(sum);
     return 0;
 }
@@ -23,26 +23,26 @@ int input_array_size()
 }
 void input_array(int n, int a[n])
 {
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-    printf("Enter the array\n");
-    scanf("%d", &a[i]);
+        printf("Enter the array\n");
+        scanf("%d", &a[i]);
     }
 }
 int sum_composite_numbers(int n, int a[n])
 {
-    int sum=0;
-    for(int i=0;i<n;i++)
+    int sum = 0;
+    for (int i = 0; i < n; i++)
     {
-        int count =0;
-        for(int j=1;j<=a[i];j++)
+        int count = 0;
+        for (int j = 1; j <= a[i]; j++)
         {
-            if(a[i]%j==0)
-            count++;
+            if (a[i] % j == 0)
+                count++;
         }
-        if(count>=3)
+        if (count >= 3)
         {
-            sum+=a[i];
+            sum += a[i];
         }
     }
     return sum;
@@ -50,5 +50,4 @@ int sum_composite_numbers(int n, int a[n])
 void output(int sum)
 {
     printf("The sum of arrays is %d\n", sum);
-
 }
