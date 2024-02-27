@@ -25,14 +25,19 @@ greatest common divisor..
 */
 int find_gcd(int a, int b)
 {
-    int gcd=1;
-    for (int i = 1;i<=a && i<=b; i++)
+    int c;
+    for(int i=0;;i++)
     {
-    if(a % i == 0 && b % i == 0)
-    {
-        gcd = i;
-    }}
-    return gcd;
+        c=a%b;
+        if(c==0)
+        {
+            return b;
+        }
+        else{
+            a=b;
+            b=c;
+        }
+    }
 }
 void output(int a, int b, int gcd)
 {
