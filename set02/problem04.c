@@ -31,13 +31,16 @@ void input_array(int n, int a[n])
 }
 int sum_composite_numbers(int n, int a[n])
 {
-    int sum = 0;
-    for(int i=0; i<n; i++)
+    int sum = 0,count;
+    for (int i = 0; i < n; i++)
     {
-      if(n % i == 0)
-      {
-        sum += i;
-      }
+        for(int j=2;j<a[i];i++)
+        {
+            if(a[i]%j==0)
+            {
+                sum+=a[i];
+            }
+        }
     }
     return sum;
 }
